@@ -6,10 +6,18 @@
 
 #ifndef GIT_DEMO_BIRD_H
 #define GIT_DEMO_BIRD_H
-
+using namespace std;
+#include <string>
 
 class Bird {
+public:
+    Bird(string);
+    int get_seeds();
 
+private:
+    int seeds = 10;
+    int nuts = 2;
+    string bird_type;
 };
 
 
